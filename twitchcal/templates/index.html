@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block main %}
+<h1>TwitchCal</h1>
+<p>Turn a Twitch streamer's schedule into a calendar!</p>
+<form action="/goto" method="get">
+	<fieldset>
+		<legend>Go to a streamer's calendar</legend>
+		<input type="text" name="streamer" id="streamer" placeholder="nyanners">
+		<button type="submit">Go</button>
+	</fieldset>
+	
+</form>
+{% endblock %}
